@@ -31,7 +31,7 @@
 
 	<!-- favicons
 	================================================== -->
-	<link rel="icon" type="image/png" href="favicon.png">
+	<link rel="icon" type="image/png" href="images/logo.png">
 
 </head>
 
@@ -45,18 +45,13 @@
 			<div class="top-bar">
 				<a class="menu-toggle" href="#"><span>Menu</span></a>
 
-				<div class="logo">
-					<a href="index.html">Miguel Fonseca</a>
-				</div>
 
 				<nav id="main-nav-wrap">
 					<ul class="main-navigation">
 						<li class="current"><a class="smoothscroll" href="#intro" title="">Home</a></li>
 						<li><a class="smoothscroll" href="#about" title="">About</a></li>
 						<li><a class="smoothscroll" href="#resume" title="">Resume</a></li>
-						<li><a class="smoothscroll" href="#portfolio" title="">Portfolio</a></li>
-						<li><a class="smoothscroll" href="#services" title="">Services</a></li>
-						<li><a class="smoothscroll" href="#contact" title="">Contact</a></li>
+						<li><a class="smoothscroll" href="#services" title="">Areas of Expertise</a></li>
 					</ul>
 				</nav>
 			</div> <!-- /top-bar -->
@@ -116,32 +111,14 @@
 					<img src="images/profile-pic.jpg" alt="Profile Picture">
 
 					<p class="lead">
-						Since I was very young, I always had an interest in the world of technology which led me to get 
+						Since very young, I always had an interest in the world of technology which led me to get 
 						a bachelor's and a master's degree in Computer Engineering.
 						<br>
 
 						Apart from my interest in the tech world, I also have a great passion for the world of fitness, 
 						nature, travel, and reading which brings me enormous physical and psychological well-being.
 						
-						
-						<!-- I received a Master&#39;s degree in Computer Engineering from the University of
-						Aveiro, Portugal. My master&#39;s
-						thesis is related to Machine Learning, and I published some papers about ML applied mHealth and
-						public
-						security.<br>
-						At the professional level, I’m working at Altice Labs for more than 2 years, where I’m involved
-						with several
-					    national and European projects of the scope of smart cities and IoT, mainly in the development
-						of backend
-						software using Python frameworks such as Django and Flask.<br>
-						Regarding the areas of Data Science and ML, I have experience in the development of the entire
-						lifecycle of
-						the model’s learning process to provide the predictive capability for an organization: starting
-						with the data
-						collection from its original source, the treatment and transformations applied to them, the
-						choice and the
-						evaluation and implementation of the Machine Learning model up to the application layer. -->
-					</p>
+						</p>
 				</div>
 
 			</div>
@@ -169,8 +146,8 @@
 
 				<ul class="info-list">
 					<li>
-						<strong>Fullname:</strong>
-						<span>Miguel Fonseca</span>
+						<strong>Location:</strong>
+						<span>Portugal</span>
 					</li>
 					<li>
 						<strong>Birth Date:</strong>
@@ -428,7 +405,7 @@
 
 				<div class="service">
 
-					<span class="icon"><i class="icon-earth"></i></span>
+					<span class="icon"><i class="icon-layers"></i></span>
 
 					<div class="service-content">
 
@@ -458,7 +435,7 @@
 
 				<div class="service">
 
-					<span class="icon"><i class="icon-paint-brush"></i></span>
+					<span class="icon"><i class="icon-table"></i></span>
 
 					<div class="service-content">
 
@@ -479,10 +456,7 @@
 
 						<h3>REST APIs</h3>
 
-						<p class="desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-							doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
-							quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
-							sit aspernatur aut odit aut fugit.
+						<p class="desc">Development of REST APIs for querying data from external entities and for interaction between systems.
 						</p>
 
 					</div>
@@ -491,23 +465,22 @@
 
 				<div class="service">
 
-					<span class="icon"><i class="icon-image"></i></span>
+					<span class="icon"><i class="icon-network"></i></span>
 
 					<div class="service-content">
 
-						<h3>Graphics Design</h3>
+						<h3>Data Engineering</h3>
 
-						<p class="desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-							doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
-							quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
-							sit aspernatur aut odit aut fugit.
+						<p class="desc">Creation of ETL procedures of that allow the automatic ingestion of
+							new data from heterogeneous sources provided by several sources
+							on a big data platform.
 						</p>
 
 					</div>
 
 				</div> <!-- /service -->
 
-				<div class="service">
+				<!-- <div class="service">
 
 					<span class="icon"><i class="icon-chat"></i></span>
 
@@ -523,13 +496,72 @@
 
 					</div>
 
-				</div> <!-- /service -->
+				</div> -->
 
 			</div> <!-- /services-list -->
 
 		</div> <!-- /services-content -->
 
 	</section> <!-- /services -->
+
+	   <!-- contact
+   ================================================== -->
+   <section id="contact">
+
+	<div class="row section-intro">
+	   <div class="col-twelve">
+
+		   <h5>Contact</h5>
+		   <h1>I'd Love To Hear From You.</h1>
+	   </div> 
+   </div> <!-- /section-intro -->
+
+   <div class="row contact-form">
+
+	   <div class="col-twelve">
+
+		<!-- form -->
+		<form name="contactForm" id="contactForm" method="post" action="">
+			  <fieldset>
+
+			  <div class="form-field">
+						<input name="contactName" type="text" id="contactName" placeholder="Name" value="" minlength="2" required="">
+			  </div>
+			  <div class="form-field">
+					 <input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value="" required="">
+			   </div>
+			  <div class="form-field">
+						<input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="">
+			   </div>                       
+			  <div class="form-field">
+					 <textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10" cols="50" required=""></textarea>
+			   </div>                      
+			 <div class="form-field">
+				 <button class="submitform">Submit</button>
+				 <div id="submit-loader">
+					<div class="text-loader">Sending...</div>                             
+						 <div class="s-loader">
+								  <div class="bounce1"></div>
+								  <div class="bounce2"></div>
+								  <div class="bounce3"></div>
+							</div>
+						</div>
+			  </div>
+
+			  </fieldset>
+		  </form> <!-- Form End -->
+
+		<!-- contact-warning -->
+		<div id="message-warning">            	
+		</div>            
+		<!-- contact-success -->
+		  <div id="message-success">
+		   <i class="fa fa-check"></i>Your message was sent, thank you!<br>
+		  </div>
+
+	 </div> <!-- /col-twelve -->
+	   
+   </div> <!-- /contact-form -->
 
 
 
